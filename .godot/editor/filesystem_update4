@@ -1,8 +1,6 @@
 res://main.tscn
+res://themes/default.tres
+res://water.gdshader
 res://player.tscn
 res://mob.tscn
-res://main.gd
-res://player.gd
 res://hud.tscn
-res://hud.gd
-res://mob.gd

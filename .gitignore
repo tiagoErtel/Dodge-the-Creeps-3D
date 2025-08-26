@@ -1,2 +1,14 @@
-.import
-logs/
+# Godot-specific
+.godot/
+.import/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.tmp
+*.bak
+*.swp
+*.tmp~
+
