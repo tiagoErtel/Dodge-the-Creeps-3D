@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://80ewgpyvif7b"]
+
+[ext_resource type="Theme" uid="uid://c8l3c5d0qoy8f" path="res://themes/default.tres" id="1_64ctp"]
+[ext_resource type="Script" uid="uid://bxgni2sf0eopx" path="res://hud.gd" id="2_8sq4i"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_64ctp")
+script = ExtResource("2_8sq4i")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+offset_right = 98.0
+offset_bottom = 23.0
+theme = ExtResource("1_64ctp")
+text = "Score: 12345"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Retry" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.392157)
+
+[node name="Label" type="Label" parent="Retry"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -14.0
+offset_right = 107.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_64ctp")
+text = "Press enter to retry"
